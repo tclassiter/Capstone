@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" 
+xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd 
+http://xmlns.jcp.org/xml/ns/javaee 
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
+id="WebApp_ID" version="5.0">
+
+  <display-name>SportyShoes</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>AdminLoginControl</display-name>
+    <servlet-name>AdminLoginControl</servlet-name>
+    <servlet-class>Login.AdminLoginControl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLoginControl</servlet-name>
+    <url-pattern>/AdminLoginControl</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  
+  <description></description>
+    <display-name>CustomerLoginControl</display-name>
+    <servlet-name>CustomerLoginControl</servlet-name>
+    <servlet-class>Login.CustomerLoginControl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerLoginControl</servlet-name>
+    <url-pattern>/CustomerLoginControl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>NewAdminLogin</display-name>
+    <servlet-name>NewAdminLogin</servlet-name>
+    <servlet-class>Login.NewAdminLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewAdminLogin</servlet-name>
+    <url-pattern>/NewAdminLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>NewCustomerLogin</display-name>
+    <servlet-name>NewCustomerLogin</servlet-name>
+    <servlet-class>Login.NewCustomerLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NewCustomerLogin</servlet-name>
+    <url-pattern>/NewCustomerLogin</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>CustomerInformation</display-name>
+    <servlet-name>CustomerInformation</servlet-name>
+    <servlet-class>Customers.CustomerInformation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerInformation</servlet-name>
+    <url-pattern>/CustomerInformation</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <description></description>
+    <display-name>FinalConfirmation</display-name>
+    <servlet-name>FinalConfirmation</servlet-name>
+    <servlet-class>CheckOut.FinalConfirmation</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FinalConfirmation</servlet-name>
+    <url-pattern>/FinalConfirmation</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>CustomerSearchResults</display-name>
+    <servlet-name>CustomerSearchResults</servlet-name>
+    <servlet-class>Products.CustomerSearchResults</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CustomerSearchResults</servlet-name>
+    <url-pattern>/CustomerSearchResults</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AdminProductControl</display-name>
+    <servlet-name>AdminProductControl</servlet-name>
+    <servlet-class>Products.AdminProductControl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminProductControl</servlet-name>
+    <url-pattern>/AdminProductControl</url-pattern>
+  </servlet-mapping>
+</web-app>
